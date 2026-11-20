@@ -3,6 +3,10 @@ import pandas as pd
 from sklearn.base import BaseEstimator, ClassifierMixin
 
 
+# Does the customer make at least 5 support calls?
+# Is the customer's contract monthly?
+
+
 class RuleBaselineClassifier(ClassifierMixin, BaseEstimator):
     def fit(
         self, X: pd.DataFrame, y: pd.Series
